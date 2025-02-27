@@ -67,6 +67,23 @@
             font-size: 22px;
             font-weight: bold;
         }
+        /* Hacer la página responsive */
+        @media (max-width: 768px) {
+            .details-container {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                padding: 20px;
+            }
+            .details {
+                padding-right: 0;
+                text-align: center;
+            }
+            .btn-whatsapp {
+                font-size: 18px;
+                padding: 12px 25px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -84,7 +101,7 @@
             </div>
             <img src="jcyRenawok.png" alt="Juego del Chef y Rena Wok" class="image">
         </div>
-        <div class="details-container" style="display: flex; justify-content: space-between;">
+        <div class="details-container">
             <div class="details">
                 <h2>📌 Características del Juego del Chef</h2>
                 <p>- Acero inoxidable de alta calidad</p>
