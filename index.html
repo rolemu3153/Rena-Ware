@@ -11,7 +11,7 @@
             margin: 0;
             padding: 0;
             background-color: #121212; /* Fondo oscuro */
-            color: #f8f8f8; /* Texto claro para contraste */
+            color: #f8f8f8; /* Texto claro */
             text-align: center;
         }
         .container {
@@ -40,18 +40,39 @@
             border-radius: 5px;
             margin: 10px 0;
         }
+        .image-gallery {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .image-gallery img {
+            width: 30%;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+        }
         video {
             width: 100%;
             max-width: 800px;
             border-radius: 10px;
+            margin-top: 20px;
         }
         .features {
+            list-style: none;
+            padding: 0;
             text-align: left;
             margin-top: 20px;
-            padding-left: 20px;
         }
         .features li {
+            display: flex;
+            align-items: center;
             margin: 10px 0;
+            font-size: 18px;
+        }
+        .features img {
+            width: 24px;
+            height: 24px;
+            margin-right: 10px;
         }
         .cta-button {
             display: inline-block;
@@ -87,6 +108,12 @@
             Paga solo <strong>₡32,020 al mes durante 24 meses</strong>
         </div>
 
+        <div class="image-gallery">
+            <img src="jc1y2.jpg" alt="Juego del Chef">
+            <img src="cacero.jpg" alt="Gran Cacerola">
+            <img src="torre.png" alt="Ollas Apiladas">
+        </div>
+
         <video controls>
             <source src="videoChefCace.mp4" type="video/mp4">
             Tu navegador no soporta la reproducción de videos.
@@ -94,10 +121,10 @@
 
         <h2>⭐ Beneficios de Rena Ware ⭐</h2>
         <ul class="features">
-            <li>✔ <strong>Alta calidad</strong> – Acero inoxidable de primera.</li>
-            <li>✔ <strong>Diseño elegante</strong> – Dale un toque moderno a tu cocina.</li>
-            <li>✔ <strong>Cocina más saludable</strong> – Conserva mejor los nutrientes.</li>
-            <li>✔ <strong>Garantía de por vida</strong> – Una inversión para siempre.</li>
+            <li><img src="check-green.png" alt="✔"> <strong>Alta calidad</strong> – Acero inoxidable de primera.</li>
+            <li><img src="check-green.png" alt="✔"> <strong>Diseño elegante</strong> – Dale un toque moderno a tu cocina.</li>
+            <li><img src="check-green.png" alt="✔"> <strong>Cocina más saludable</strong> – Conserva mejor los nutrientes.</li>
+            <li><img src="check-green.png" alt="✔"> <strong>Garantía de por vida</strong> – Una inversión para siempre.</li>
         </ul>
 
         <p><strong>📢 ¡No lo pienses más!</strong> <br>Haz clic en el botón de más información y aprovecha esta oferta única.</p>
@@ -109,3 +136,4 @@
 
 </body>
 </html>
+
